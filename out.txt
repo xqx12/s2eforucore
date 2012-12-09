@@ -1,0 +1,6 @@
+Hello, UCoreMonitor 1
+[slotFunctionCalling]: fname=set_proc_name c010d8e5
+[slotFunctionCalling]: fname=set_proc_name c010d975
+[slotFunctionCalling]: fname=proc_run c010dcd1
+[slotFunctionCalling]: fname=proc_run c010dcd1
+[slotFunctionCalling]: fname=set_proc_name c010d31d

@@ -1,0 +1,7 @@
+#!/bin/sh
+
+S2E=/home/xqx/S2EDIR/build/qemu-debug/i386-s2e-softmmu/qemu-system-i386
+
+$S2E  -rtc clock=vm -net user -net nic,model=ne2k_pci -monitor telnet:localhost:4444,server,nowait  \
+ /home/xqx/winxp3.qcow2 -s -m 128 -s2e-config-file assert.lua  -loadvm vm_cdplugin
+

@@ -1,0 +1,9 @@
+#!/bin/sh
+
+S2E=/home/xqx/s2e/build/qemu-debug/i386-s2e-softmmu/qemu-system-i386
+
+#$S2E  -rtc clock=vm -net user -net nic,model=ne2k_pci -parallel stdio -monitor telnet:localhost:4444,server,nowait \
+#-hda /home/xqx/ucore/lab5/bin/ucore.img -drive file=/home/xqx/ucore/lab5/bin/swap.img,media=disk,cache=writeback -s -m 128 -s2e-config-file  ucoreconfig.lua
+
+gdb --args $S2E -hda /home/xqx/ucore/lab5/bin/ucore.img -drive file=/home/xqx/ucore/lab5/bin/swap.img,media=disk,cache=writeback -serial null -s2e-config-file ucoreconfig.lua -s2e-verbose -d in_asm,op,out_asm,llvm_ir,int
+#$S2E -hda /home/xqx/s2eucore/ucore-s2e/lab5_result/bin/ucore.img -drive file=/home/xqx/s2eucore/ucore-s2e/lab5_result/bin/swap.img,media=disk,cache=writeback -serial null -s2e-config-file ucoreconfig.lua -s2e-verbose
