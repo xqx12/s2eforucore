@@ -1,0 +1,1 @@
+/home2/chy/researchs/s2e/build-s2e-newest/qemu-release/i386-s2e-softmmu/qemu-system-i386 -hda lab5_result/bin/ucore.img -drive file=lab5_result/bin/swap.img,media=disk,cache=writeback -serial null -s2e-config-file config.lua -s2e-verbose 
