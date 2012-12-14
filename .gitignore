@@ -15,3 +15,6 @@
 
 # some backup file with ~
 *~
+
+# build directory
+/build/
