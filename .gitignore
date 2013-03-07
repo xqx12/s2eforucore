@@ -11,10 +11,14 @@
 *.lai
 *.la
 *.a
-
+s2e-*
 
 # some backup file with ~
 *~
+*.udb
 
 # build directory
 /build/
+/lab5_result/bin/
+/lab5_result/obj/
+/s2e-*/

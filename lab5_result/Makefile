@@ -23,8 +23,8 @@ endif
 
 # try to infer the correct QEMU
 ifndef QEMU
-QEMU := $(shell if which qemu > /dev/null; \
-	then echo 'qemu'; exit; \
+QEMU := $(shell if which qemu-system-x86_64 > /dev/null; \
+	then echo 'qemu-system-x86_64'; exit; \
 	elif which i386-ucore-elf-qemu > /dev/null; \
 	then echo 'i386-ucore-elf-qemu'; exit; \
 	else \

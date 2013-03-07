@@ -7,9 +7,9 @@ s2e = {
 
 plugins = {
 	--"FunctionMonitor",
-	"WindowsMonitor",
-	"ModuleExecutionDetector",
-	"ExecutionTracer",
+--	"WindowsMonitor",
+--	"ModuleExecutionDetector",
+--	"ExecutionTracer",
 	--"TestCaseGenerator",
 	--"LibraryCallMonitor",
 	--"ModuleTracer",
@@ -19,17 +19,17 @@ plugins = {
 	--"LibraryCallMonitor",
 	--"MemoryChecker",
 	--"MemoryTracer",
-	"AssertExpert",
+--	"AssertExpert",
 	--"VulMining",
-	"StackMonitor",
-	"StackChecker",
+--	"StackMonitor",
+--	"StackChecker",
 	--"BaseInstructions",
 	-- Track when the guest loads programs
   	--"RawMonitor",
 	-- Restrict symbolic execution to
   	-- the programs of interest
   	--"CodeSelector",
-	"InstructionTracker",
+--	"InstructionTracker",
 }
 
 pluginsConfig = {}

@@ -323,6 +323,7 @@ void RawMonitor::onCustomInstruction(S2EExecutionState* state, uint64_t opcode)
 
 void RawMonitor::loadModule(S2EExecutionState *state, const Cfg &c, bool skipIfDelay)
 {
+	printDebugMsg("loadModule","%s\n","entry");
     ModuleDescriptor md;
     if (c.delayLoad && skipIfDelay) {
         return;

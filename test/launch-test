@@ -1,0 +1,9 @@
+#!/bin/sh
+
+S2E=/home/xqx/xqx/git/s2eforucore/build/qemu-release/i386-s2e-softmmu/qemu-system-i386
+
+
+
+$S2E -hda /home/xqx/xqx/git/s2eforucore/lab5_result/bin/ucore.img -drive file=/home/xqx/xqx/git/s2eforucore/lab5_result/bin/swap.img,media=disk,cache=writeback -serial null -s2e-config-file $1 -s2e-verbose 
+
+

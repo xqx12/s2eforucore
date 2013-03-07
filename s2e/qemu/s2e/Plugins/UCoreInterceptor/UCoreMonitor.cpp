@@ -52,6 +52,7 @@ void UCoreMonitor::initialize()
 	  s2e()->getWarningsStream() << "open out file error \n";
    }
    debug_print("Hello, UCoreMonitor %d\n", 1);
+   printDebugMsg("xqx", "Hello, UCoreMonitor %d\n", 1);
    
    /*******addbyxqx20121205 for functionMonitor*********
    m_func_monitor = static_cast<FunctionMonitor*>(s2e()->getPlugin("FunctionMonitor"));
@@ -84,8 +85,7 @@ void UCoreMonitor::initialize()
    if(m_MonitorFunction){
 	   s2e()->getCorePlugin()->onTranslateBlockEnd
 			.connect(sigc::mem_fun(*this, &UCoreMonitor::onTranslateBlockEnd));
-	   
-			
+	   			
 	   this->onFunctionCalling.connect(sigc::mem_fun(*this, &UCoreMonitor::slotFunctionCalling));
    }
    

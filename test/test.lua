@@ -13,11 +13,26 @@ plugins = {
 --     "BaseInstructions"
    "UCoreBaseInstructions",
    "UCoreMonitor",
+   "ExecutionTracer",
+--   "ModuleExecutionDetector",
+   "RawMonitor",
 --   "ConcolicDFSSearcher",
 --   "UCoreMemoryManagement"
 }
 
 pluginsConfig = {
+}
+
+pluginsConfig.RawMonitor = {
+    kernelStart = 0xc0000000,
+    myprog_id = {
+        delay = true,
+        name = "tests2e",
+        start = 0x0,
+        size = 52505,
+        nativebase = 0x8048000,
+        kernelmode = false
+    }
 }
 
 

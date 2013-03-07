@@ -2,8 +2,6 @@ Hello, UCoreBaseInstructions 1
 [UCORE]handleBuiltInUCoreOps opcode=900
 [UCORE]handleBuiltInUCoreOps opcode=300
 [UCORE]makeSymbolic makeConcolic=0
-[UCORE]handleBuiltInUCoreOps opcode=10700
-[UCORE]printExpression 
 [UCORE]handleBuiltInUCoreOps opcode=a00
 [UCORE]handleBuiltInUCoreOps opcode=2100
 [UCORE]concretize addConstraint=0
